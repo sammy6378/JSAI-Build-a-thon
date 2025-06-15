@@ -1,0 +1,288 @@
+body {
+  background: #fbfbfa;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 32px 20px;
+  background: #fff;
+  border: 3px solid #7c7c73;
+  border-radius: 16px;
+  box-shadow: 2px 6px 14px #ddd;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.6em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  border: 3px solid #777;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #f9f9f6;
+}
+
+.category {
+  margin-top: 38px;
+}
+
+.category h2 {
+  font-family: "Permanent Marker", cursive;
+  display: inline-block;
+  border-bottom: 2.5px dashed #888;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+.desc {
+  margin: 6px 0 14px 0;
+  font-size: 1.11em;
+  color: #272722;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.product {
+  background: #f6f6f4;
+  border: 2.5px solid #7a7a6a;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 130px;
+  padding: 16px 10px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 2px 5px #d5d5d0;
+  margin: 0 4px;
+}
+
+.product-img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 12px;
+  border: 2px dashed #a9a99f;
+  border-radius: 6px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sketch style illustrations using CSS (simple/representative) */
+.tent1::after {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 32px;
+  width: 42px;
+  height: 32px;
+  border: 2px solid #afafaa;
+  border-radius: 18px 18px 8px 8px/25px 25px 12px 12px;
+  border-bottom-width: 4px;
+  transform: rotate(-2deg);
+}
+.tent2::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 34px;
+  width: 36px;
+  height: 31px;
+  border-left: 2px solid #9b9b8c;
+  border-right: 2px solid #9b9b8c;
+  border-top: 2px solid #7d7d6c;
+  border-radius: 40% 40% 18% 15%/30% 51% 18% 15%;
+}
+.tent2::before {
+  content: "";
+  position: absolute;
+  left: 35px;
+  top: 15px;
+  width: 16px;
+  height: 25px;
+  border-top: 2px solid #757566;
+  border-right: 2px solid #757566;
+  border-radius: 60% 40% 6% 6%/80% 50% 10% 10%;
+  transform: rotate(-8deg);
+}
+
+.tent3::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 34px;
+  width: 54px;
+  height: 32px;
+  border: 2px solid #adada4;
+  border-bottom-width: 4px;
+  border-radius: 14px 18px 12px 14px / 25px 30px 8px 18px;
+}
+.tent3::before {
+  content: "";
+  position: absolute;
+  left: 55px;
+  top: 47px;
+  width: 21px;
+  height: 18px;
+  border: 2px solid #bbbbaa;
+  border-radius: 6px 6px 10px 10px;
+}
+
+.backpack1::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 54px;
+  left: 20px;
+  top: 18px;
+  border: 2.5px solid #b7b7a5;
+  border-radius: 18px 18px 24px 24px/19px 16px 25px 32px;
+}
+.backpack1::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  left: 38px;
+  top: 12px;
+  border: 2px solid #aaa;
+  border-radius: 50% 50% 45% 45%/34% 42% 44% 50%;
+}
+
+.backpack2::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 49px;
+  left: 20px;
+  top: 22px;
+  border: 2.5px solid #afafa0;
+  border-radius: 20px 17px 19px 25px/23px 19px 27px 20px;
+}
+.backpack2::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 18px;
+  left: 33px;
+  top: 10px;
+  border-top: 2.5px solid #a8a8a1;
+  border-radius: 19px 15px 5px 5px/9px 12.5px 5px 5px;
+  transform: rotate(-12deg);
+}
+
+.backpack3::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 45px;
+  left: 27px;
+  top: 26px;
+  border: 2px solid #adad95;
+  border-radius: 20px 18px 18px 11px/19px 15px 32px 32px;
+}
+.backpack3::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 39px;
+  left: 38px;
+  top: 13px;
+  border-bottom: 2px solid #a8a8a2;
+  border-radius: 7px 7px 16px 10px/25px 17px 20px 19px;
+}
+
+.jacket::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 49px;
+  left: 14px;
+  top: 24px;
+  border: 2px solid #acac98;
+  border-radius: 16px 16px 24px 20px/12px 13px 34px 37px;
+}
+.jacket::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 19px;
+  left: 31px;
+  top: 18px;
+  border-top: 2px solid #b5b5a1;
+  border-radius: 18px 13px 5px 5px/8px 8px 5px 5px;
+}
+
+.pants::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 38px;
+  left: 22px;
+  top: 33px;
+  border-left: 2.5px solid #babaa2;
+  border-bottom: 2.5px solid #babaa2;
+  border-radius: 6px 16px 9px 10px/21px 24px 11px 15px;
+}
+.pants::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 38px;
+  left: 42px;
+  top: 33px;
+  border-right: 2.5px solid #babaa2;
+  border-bottom: 2.5px solid #babaa2;
+  border-radius: 16px 6px 10px 9px/24px 21px 15px 11px;
+}
+
+.boots::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 20px;
+  left: 19px;
+  top: 58px;
+  border: 2.5px solid #8d8d7c;
+  border-radius: 8px 11px 16px 16px/8px 7px 12px 16px;
+}
+.boots::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 20px;
+  left: 41px;
+  top: 56px;
+  border: 2.5px solid #616154;
+  border-radius: 11px 8px 12px 16px/7px 8px 16px 12px;
+}
+
+.product-title {
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-size: 1.12em;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1em;
+  margin-top: 0px;
+  color: #232320;
+  letter-spacing: 1.2px;
+}
