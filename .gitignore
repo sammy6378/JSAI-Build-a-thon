@@ -403,3 +403,6 @@ FodyWeavers.xsd
 # Environment variables
 .env
 .azure
+
+# yaml files
+*.yaml

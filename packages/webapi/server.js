@@ -6,11 +6,10 @@ import pdfParse from 'pdf-parse/lib/pdf-parse.js';
 import express from "express";
 import cors from "cors";
 import 'dotenv/config';
-import ModelClient from "@azure-rest/ai-inference";
 import { AzureChatOpenAI } from "@langchain/openai";
 import { BufferMemory } from "langchain/memory";
 import { ChatMessageHistory } from "langchain/stores/message/in_memory";
-
+import { AgentService } from "./agentService.js";
 // add before the client initialization -------------------------------
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -97,12 +96,24 @@ function retrieveRelevantContent(query) {
     .map(item => item.chunk);
 }
 // --------------------------------------------------------------------
+const agentService = new AgentService();
 
 // replace the entire app.post handler with the following code --------
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
   const useRAG = req.body.useRAG === undefined ? true : req.body.useRAG;
   const sessionId = req.body.sessionId || "default";
+
+  const mode = req.body.mode || "basic";
+
+// If agent mode is selected, route to agent service
+if (mode === "agent") {
+  const agentResponse = await agentService.processMessage(sessionId, userMessage);
+  return res.json({
+    reply: agentResponse.reply,
+    sources: []
+  });
+}
 
   let sources = [];
 
