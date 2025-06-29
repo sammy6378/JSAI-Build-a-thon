@@ -1,4 +1,6 @@
+import 'dotenv/config';
 const changes = await git.diff({ staged: true });
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 defDiff("CODE_CHANGES", changes);
 
