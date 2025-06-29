@@ -1,7 +1,7 @@
 {
     "analysisServicesServers": "as",
     "apiManagementService": "apim-",
-    "appConfigurationStores": "appcs-",
+    "appConfigurationConfigurationStores": "appcs-",
     "appManagedEnvironments": "cae-",
     "appContainerApps": "ca-",
     "authorizationPolicyDefinitions": "policy-",
@@ -37,7 +37,6 @@
     "devicesProvisioningServices": "provs-",
     "devicesProvisioningServicesCertificates": "pcert-",
     "documentDBDatabaseAccounts": "cosmos-",
-    "documentDBMongoDatabaseAccounts": "cosmon-",
     "eventGridDomains": "evgd-",
     "eventGridDomainsTopics": "evgt-",
     "eventGridEventSubscriptions": "evgs-",
@@ -133,4 +132,5 @@
     "webSitesAppServiceEnvironment": "ase-",
     "webSitesFunctions": "func-",
     "webStaticSites": "stapp-"
-}
+  }
+  
