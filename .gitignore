@@ -401,6 +401,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Environment variables
+.env.local
 .env
 .azure
 
